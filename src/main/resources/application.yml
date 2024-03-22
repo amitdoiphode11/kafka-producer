@@ -1,0 +1,16 @@
+spring:
+  kafka:
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      group-id: group_id
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      bootstrap-servers: 127.0.0.1:9092
+auto:
+  create:
+    topics:
+      enable: 'true'
+server:
+  port: '9000'
+topic:
+  name:
+    producer: topico.teste
